@@ -15,11 +15,28 @@ rp2040 + ST7789 240x320 display module
 - С [сайта](https://git-scm.com/downloads/win) загрузить установщик
 - Следовать инструкциям инсталлятора, не меняя параметров установки
 - Переменная `PATH` должна обновиться автоматически
-- Убедиться в правильности установки можно путем ввода `git –version` в `cmd`
+- Убедиться в правильности установки можно путем ввода `git –-version` в `cmd`
 ## OpenOCD
 - С [сайта](https://github.com/xpack-dev-tools/openocd-xpack/releases) загрузить zip-архив для win32
 - Извлечь его в `C:\`, таким образом должна появиться директория `C:\xpack-openocd-<...>\bin\`
 - Добавить вышеуказанную директорию в `PATH`
+## Проверка правильности установки
+Для проверки выполнить в командной строке:
+- `g++ --version`
+- `mingw32-make --version`
+- `arm-none-eabi-g++ --version`
+- `git --version`
+- `cmake --version`
+- `openocd --version`
+## YAHAL
+- Клонировать репозиторий `git clone https://git.fh-aachen.de/Terstegge/YAHAL.git`
+- Перейти в директорию с примером `cd YAHAL/examples/rp2040-launchpad/blink_simple`
+- Создать папку `build` и перейти в неё `mkdir build && cd build`
+- Выполнить `cmake -G "MinGW Makefiles" ..`
+- Скомпилировать пример, выполнив `mingw32-make`
+- При правильно выполненной установке пример будет успешно скомпилирован, процесс завершится
+- При возникновении ошибки `unrecognized option --no-warn-rwx-segment` в файле `YAHAL/cmake/toolchains/arm-gcc.cmake` заменить `--no-warn-rwx-segment` на `--no-warn-rwx-segments`, очистить папку `build` и повторить попытку
+- При повторном возникновении ошибки, удалить в том же файле флаг `-Wl,--no-warn-rwx-segments` или `-Wl,--no-warn-rwx-segment` из `ARM_GCC_LINK_FLAGS`
 ## Zadig (USB драйвер)
 - Загрузить Zadig с [сайта](https://zadig.akeo.ie)
 - Подключить rp2040 (USB)
