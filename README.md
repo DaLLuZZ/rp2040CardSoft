@@ -34,7 +34,7 @@ rp2040 + ST7789 240x320 display module
 - Создать папку `build` и перейти в неё `mkdir build && cd build`
 - Выполнить `cmake -G "MinGW Makefiles" ..`
 - Скомпилировать пример, выполнив `mingw32-make`
-- При правильно выполненной установке пример будет успешно скомпилирован, процесс завершится
+- При правильно выполненной установке пример будет успешно скомпилирован, процесс завершится выводом компоновщика информации об использованных регионах памяти, а также строчкой `[100%] Built target blink_simple`, в папке `build` появится файл `blink_simple.bin`
 - При возникновении ошибки `unrecognized option --no-warn-rwx-segment` в файле `YAHAL/cmake/toolchains/arm-gcc.cmake` заменить `--no-warn-rwx-segment` на `--no-warn-rwx-segments`, очистить папку `build` и повторить попытку
 - При повторном возникновении ошибки, удалить в том же файле флаг `-Wl,--no-warn-rwx-segments` или `-Wl,--no-warn-rwx-segment` из `ARM_GCC_LINK_FLAGS`
 ## Zadig (USB драйвер)
