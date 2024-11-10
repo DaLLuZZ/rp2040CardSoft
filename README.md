@@ -13,3 +13,4 @@ rp2040 + ST7789 240x320 display module
 
 # Сборка прошивки (Linux)
 - Убедиться, что установлены `gcc`, `g++`, `make` и `cmake`
+- Установить GNU ARM Cross-compiler
