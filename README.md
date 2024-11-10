@@ -8,8 +8,14 @@ rp2040 + ST7789 240x320 display module
 - Добавить `C:\mingw64\bin` в `PATH` (`WIN + R` -> `sysdm.cpl` -> `Enter` -> `Дополнительно` / `Advanced` -> `Переменные среды` / `Environment Variables`)
 ## Установка ARM GNU Toolchain
 - С [сайта](https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain) (VPN required) загрузить `Arm GNU Toolchain`, в названии файла должно содержаться `arm-none-eabi`
-- Следовать инструкциям инсталлятора, не меняя параметров
+- Следовать инструкциям инсталлятора, не меняя параметров установки
 - Добавить `C:\Program Files (x86)\Arm GNU Toolchain arm-none-eabi\ВЕРСИЯ\bin\` в `PATH`, указав установленную версию
+- Убедиться в правильности установки можно путем ввода команды `arm-none-eabi-gcc --version` в `cmd`
+## Git
+- С [сайта](https://git-scm.com/downloads/win) загрузить установщик Git
+- Следовать инструкциям инсталлятора, не меняя параметров установки
+- Переменная `PATH` должна обновиться автоматически
+- Убедиться в правильности установки можно путем ввода `git –version` в `cmd`
 
 # Сборка прошивки (Linux)
 - Убедиться, что установлены `gcc`, `g++`, `make` и `cmake`
