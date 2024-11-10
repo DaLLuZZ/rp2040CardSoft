@@ -12,10 +12,17 @@ rp2040 + ST7789 240x320 display module
 - Добавить `C:\Program Files (x86)\Arm GNU Toolchain arm-none-eabi\ВЕРСИЯ\bin\` в `PATH`, указав установленную версию
 - Убедиться в правильности установки можно путем ввода команды `arm-none-eabi-gcc --version` в `cmd`
 ## Git
-- С [сайта](https://git-scm.com/downloads/win) загрузить установщик Git
+- С [сайта](https://git-scm.com/downloads/win) загрузить установщик
 - Следовать инструкциям инсталлятора, не меняя параметров установки
 - Переменная `PATH` должна обновиться автоматически
 - Убедиться в правильности установки можно путем ввода `git –version` в `cmd`
+## OpenOCD
+- С [сайта](https://github.com/xpack-dev-tools/openocd-xpack/releases) загрузить zip-архив для win32
+- Извлечь его в `C:\`, таким образом должна появиться директория `C:\xpack-openocd-<...>\bin\`
+- Добавить вышеуказанную директорию в `PATH`
+## Zadig (USB драйвер)
+- Загрузить Zadig с [сайта](https://zadig.akeo.ie)
+- Поместить загруженный `.exe` файл в директорию `C:\mingw64\bin\`
 
 # Сборка прошивки (Linux)
 - Убедиться, что установлены `gcc`, `g++`, `make` и `cmake`
