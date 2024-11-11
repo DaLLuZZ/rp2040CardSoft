@@ -81,3 +81,14 @@ rp2040 + ST7789 240x320 display module
 - микроконтроллер `rp2040` с двумя ядрами Arm Cortex M0+ с тактовой частотой до 133 МГц, 264 КБ SRAM-памяти, поддержкой до 16 МБ внешней флеш-памяти
 - модуль экрана `GY-TFT028F276` 2.8'' 240(RGB)x320 SPI [ST7789V3](https://files.waveshare.com/upload/c/c1/ST7789V3_V0.1.pdf)
 ### Детальное описание
+#### Файлы проекта
+- `CMakeLists.txt` - скрипт сборки проекта
+- `CharacterDrawer.cpp`, `CharacterDrawer.h` - класс отрисовки символов (текста), шрифт
+- `Difficulty.cpp`, `Difficulty.h` - класс уровней сложности
+- `GetColors.cpp`, `GetColors.h` - класс, содержащий фон в виде массива байтов, а также методы, связанные с его отрисовкой
+- `ScoreEntry.cpp`, `ScoreEntry.h` - лидерборд
+- `flappy_back.cpp` - содержит функцию main
+- `YAHAL_import.cmake` - скрипт, задача которого - найти путь к установленному YAHAL
+- `Game.cpp`, `Game.h` - логика игры, движения, коллизии, визуализация и прочее
+#### Project specific
+Вся логика игры описана в файлах `Game.cpp` и `Game.h`. 
