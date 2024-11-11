@@ -104,6 +104,7 @@ rp2040 + ST7789 240x320 display module
 | 9 | GPIO7 | LCD_MOSI |
 | 11 | GPIO8 | LCD_DC |
 | 12 | GPIO9 | LCD_CS |
+| 15 | GPIO12 | LEDS |
 | 24 | SWCLK | SWD |
 | 25 | SWDIO | SWD |
 | 29 | GPIO18 | LCD_BL |
