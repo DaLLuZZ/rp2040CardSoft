@@ -81,6 +81,12 @@ rp2040 + ST7789 240x320 display module
 - Проделать действия, описанные в [этом](#Zadig-(USB-драйвер)) разделе
 - `openocd -f interface/cmsis-dap.cfg -f target/rp2040.cfg -c "adapter speed 5000" -c "program flappy_back.elf verify reset exit"`
 
+| rp2040-zero pin | target |
+| - | - |
+| 3 (any GND) | GND |
+| 4 | SWCLK |
+| 5 | SWDIO |
+
 # Описание проекта
 ### Общее описание
 Проект представляет из себя исходный код игры (Flappy Bird), предназначенный для запуска на плате [ieye](https://github.com/Neyasyti-Aero/CardNFTHardware). Код написан на C++ (стандарт C++20) с использованием библиотеки [YAHAL](https://git.fh-aachen.de/Terstegge/YAHAL)
