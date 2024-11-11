@@ -95,6 +95,19 @@ rp2040 + ST7789 240x320 display module
 - микроконтроллер `rp2040` с двумя ядрами Arm Cortex M0+ с тактовой частотой до 133 МГц, 264 КБ SRAM-памяти, поддержкой до 16 МБ внешней флеш-памяти
 - модуль экрана `GY-TFT028F276` 2.8'' 240(RGB)x320 SPI [ST7789V3](https://files.waveshare.com/upload/c/c1/ST7789V3_V0.1.pdf)
 
+| # | pin | Назначение |
+| - | - | - |
+| 3 | GPIO1 | BUT_L |
+| 6 | GPIO4 | BUT_R |
+| 7 | GPIO5 | LCD_RST |
+| 8 | GPIO6 | LCD_SCK |
+| 9 | GPIO7 | LCD_MOSI |
+| 11 | GPIO8 | LCD_DC |
+| 12 | GPIO9 | LCD_CS |
+| 24 | SWCLK | SWD |
+| 25 | SWDIO | SWD |
+| 29 | GPIO18 | LCD_BL |
+
 ### Детальное описание
 
 #### Файлы проекта
