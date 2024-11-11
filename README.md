@@ -79,7 +79,7 @@ rp2040 + ST7789 240x320 display module
 - Загрузить `debugprobe.uf2` с [сайта](https://github.com/raspberrypi/debugprobe/releases)
 - Прошить rp2040 через USB, как описано в [этом](#загрузка-по-usb) разделе
 - Проделать действия, описанные в [этом](#Zadig-(USB-драйвер)) разделе
-- Ссылка на [openocd](https://gnutoolchains.com/arm-eabi/openocd/)
+- `openocd -f interface/cmsis-dap.cfg -f target/rp2040.cfg -c "adapter speed 5000" -c "program flappy_back.elf verify reset exit"`
 
 # Описание проекта
 ### Общее описание
