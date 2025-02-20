@@ -83,9 +83,9 @@ rp2040 + ST7789 240x320 display module
 
 | rp2040-zero pin | target |
 | - | - |
-| 3 (any GND) | GND |
-| 4 | SWCLK |
-| 5 | SWDIO |
+| GND | GND |
+| 2 | SWCLK |
+| 3 | SWDIO |
 
 # Описание проекта
 ### Общее описание
