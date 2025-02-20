@@ -23,13 +23,13 @@ public:
     void run();
 
 private:
-    gpio_rp2040_pin _lcd_cs;
+    gpio_rp2040 _lcd_cs;
     spi_rp2040  _spi;
-    gpio_rp2040_pin _lcd_rst;
-    gpio_rp2040_pin _lcd_dc;
+    gpio_rp2040 _lcd_rst;
+    gpio_rp2040 _lcd_dc;
     st7735s_drv _lcd;
-    gpio_rp2040_pin _s1;
-    gpio_rp2040_pin _s2;
+    gpio_rp2040 _s1;
+    gpio_rp2040 _s2;
     timer_rp2040 _timer;
     adc_rp2040_channel _accel_x;
 
